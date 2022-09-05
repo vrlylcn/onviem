@@ -20,9 +20,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 970px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Header */
@@ -39,11 +41,12 @@ body {
 }
 
 .header__logo {
+  position: relative;
+  top: -1px;
   margin-right: auto;
 }
 
-.header__button-navigation,
-.header__button-login {
+.header__button {
   display: inline-block;
   padding-right: 25px;
   border: 0;
@@ -95,4 +98,77 @@ body {
 
 .header__user {
   margin-left: auto;
+}
+
+.header__button-mobile-navigation {
+  display: none;
+  padding: 0;
+  border: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.header__button-mobile-navigation span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.header__button-mobile-navigation span + span {
+  margin-top: 3px;
+}
+
+.header__button-mobile-search {
+  display: none;
+  width: 35px;
+  height: 30px;
+  background: #fff url("/assets/images/icons/icon-search.png") no-repeat center center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+}
+
+.header__button-mobile-search.is-active {
+  background-image: url("/assets/images/icons/icon-close.png");
+  background-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .header__user,
+  .header__button-navigation,
+  .header__button-login,
+  .header__search {
+    display: none;
+  }
+
+  .header__button-mobile-navigation,
+  .header__button-mobile-search {
+    display: inline-block;
+  }
+
+  .header__search.is-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    margin-left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header__search-input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .header__search-button {
+    width: 47px;
+    height: 47px;
+  }
 }

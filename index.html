@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onviem - E-Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Onviem E-Learning</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/assets/styles/normalize.css">
@@ -15,15 +15,21 @@
   <header class="header">
     <div class="container">
 
+      <button type="button" class="header__button-mobile-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="header__logo">
         <a href="index.html" class="header__logo-link">
           <img src="/assets/images/onviem-logo.png" alt="Onviem" width="97" height="24" class="header__logo-image">
         </a>
       </div>
 
-      <button type="button" class="header__button-navigation">EĞİTİMLER</button>
+      <button type="button" class="header__button header__button-navigation">EĞİTİMLER</button>
 
-      <div class="header__search">
+      <div class="header__search js-container-search">
         <form method="POST" onsubmit="return false" novalidate class="header__search-form">
           <label for="query" class="header__search-label">
             <input type="text" id="query" name="query" placeholder="Eğitim, program veya eğitmen ara" class="header__search-input">
@@ -33,9 +39,10 @@
       </div>
 
       <div class="header__user">
-        <button type="button" class="header__button-login">GİRİŞ YAP / KAYIT OL</button>
+        <button type="button" class="header__button header__button-login">GİRİŞ YAP / KAYIT OL</button>
       </div>
 
+      <button type="button" class="header__button-mobile-search js-button-mobile-search"></button>
     </div>
   </header>
 
