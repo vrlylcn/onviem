@@ -8,12 +8,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/assets/styles/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/app.css">
 </head>
 <body>
-  
-  <h1>Hello World!</h1>
+  <header class="header">
+    <div class="container">
+
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="/assets/images/onviem-logo.png" alt="Onviem" width="97" height="24" class="header__logo-image">
+        </a>
+      </div>
+
+      <button type="button" class="header__button-navigation">EĞİTİMLER</button>
+
+      <div class="header__search">
+        <form method="POST" onsubmit="return false" novalidate class="header__search-form">
+          <label for="query" class="header__search-label">
+            <input type="text" id="query" name="query" placeholder="Eğitim, program veya eğitmen ara" class="header__search-input">
+            <button type="submit" class="header__search-button">ARA</button>
+          </label>
+        </form>
+      </div>
+
+      <div class="header__user">
+        <button type="button" class="header__button-login">GİRİŞ YAP / KAYIT OL</button>
+      </div>
+
+    </div>
+  </header>
 
   <script src="/assets/scripts/jquery.min.js"></script>
   <script src="/assets/scripts/app.js"></script>
