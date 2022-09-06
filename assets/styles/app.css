@@ -372,3 +372,31 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
+
+/* Statistics */
+.statistics .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.statistics__item {
+  text-align: center;
+}
+
+.statistics__title {
+  margin: 0 0 12px 0;
+  padding: 0;
+  color: #434753;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.statistics__text {
+  margin: 0;
+  padding: 0;
+  color: #434753;
+  font-size: 14px;
+  font-weight: 900;
+}
