@@ -30,7 +30,6 @@ body {
 /* Header */
 .header {
   height: 50px;
-  margin-bottom: 40px;
   background-color: #434753;
 }
 
@@ -138,10 +137,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header {
-    margin-bottom: 0;
-  }
-
   .header__user,
   .header__button-navigation,
   .header__button-login,
@@ -182,6 +177,13 @@ body {
 /* Hero */
 .hero {
   position: relative;
+  background: url("../images/background-hero.jpg") no-repeat center top;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: right;
+  }
 }
 
 .hero__picture {
@@ -239,6 +241,14 @@ body {
   text-decoration: none;
   border-radius: 25px;
   background-color: #139fdd;
+  border: 1px solid transparent;
+}
+
+.hero__button:hover {
+  color: #139fdd;
+  background-color: #fff;
+  border-color: #139fdd;
+  transition: all 250ms;
 }
 
 /* Properties */
