@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>İletişim - Onviem E-Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <button type="button" class="header__button-mobile-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="assets/images/onviem-logo.png" alt="Onviem" width="97" height="24" class="header__logo-image">
+        </a>
+      </div>
+
+      <button type="button" class="header__button header__button-navigation">EĞİTİMLER</button>
+
+      <div class="header__search" id="search-container">
+        <form method="POST" onsubmit="return false" novalidate class="header__search-form">
+          <label for="query" class="header__search-label">
+            <input type="text" id="query" name="query" placeholder="Eğitim, program veya eğitmen ara" class="header__search-input">
+            <button type="submit" class="header__search-button">ARA</button>
+          </label>
+        </form>
+      </div>
+
+      <div class="header__user">
+        <button type="button" class="header__button header__button-login">GİRİŞ YAP / KAYIT OL</button>
+      </div>
+
+      <button type="button" class="header__button-mobile-search" id="button-mobile-search"></button>
+    </div>
+  </header>
+
+  <main class="sub-page">
+    <div class="container">
+      <h1 class="sub-page__title">İLETİŞİM</h1>
+      <div class="sub-page__content">
+        <p>Her türlü görüş, eleştiri ve isteklerinizi aşağıdaki formu kullanarak veya mail@onviem.com e-posta adresini kullanarak ONVİEM Müşteri Hizmetlerine ulaşabilirsiniz.</p>
+      
+        <form method="POST" class="contact-form" onsubmit="return false" novalidate>
+          <div class="contact-form__row">
+            <div class="contact-form__group">
+              <label for="name_surname" class="contact-form__label">İsim, Soyisim</label>
+              <input type="text" id="name_surname" name="name_surname" class="contact-form__input" required>
+            </div>
+
+            <div class="contact-form__group">
+              <label for="email" class="contact-form__label">E-Posta Adresi</label>
+              <input type="email" id="email" name="email" class="contact-form__input" required>
+            </div>
+          </div>
+
+          <label for="message" class="contact-form__label">Mesajınız</label>
+          <textarea name="message" id="message" class="contact-form__textarea"></textarea>
+
+          <div class="contact-form__buttons">
+            <button type="reset" class="contact-form__button contact-form__button--reset">TEMİZLE</button>
+            <button type="submit" class="contact-form__button contact-form__button--submit">GÖNDER</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">ANASAYFA</a>
+          <span class="footer__separator">/</span>
+          <a href="about.html" class="footer__link">HAKKIMIZDA</a>
+          <span class="footer__separator">/</span>
+          <a href="index.html" class="footer__link">EĞİTMENLER</a>
+          <span class="footer__separator">/</span>
+          <a href="contact.html" class="footer__link">İLETİŞİM</a>
+        </div>
+
+        <small class="footer__copyright-text">Copyright &copy;2016 - Tüm Hakkı Saklıdır.</small>
+      </div>
+
+      <div class="footer__social">
+        <a href="index.html" class="footer__social-link">
+          <img src="assets/images/icons/icon-facebook.jpg" alt="Facebook" width="32" height="32">
+        </a>
+
+        <a href="index.html" class="footer__social-link">
+          <img src="assets/images/icons/icon-twitter.jpg" alt="Twitter" width="32" height="32">
+        </a>
+
+        <a href="index.html" class="footer__social-link" width="32" height="32">
+          <img src="assets/images/icons/icon-youtube.jpg" alt="YouTube" width="32" height="32">
+        </a>
+
+        <a href="index.html" class="footer__social-link">
+          <img src="assets/images/icons/icon-google-plus.jpg" alt="Google Plus" width="32" height="32">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts/jquery.min.js"></script>
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>
