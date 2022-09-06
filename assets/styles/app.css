@@ -51,7 +51,7 @@ body {
   display: inline-block;
   padding-right: 25px;
   border: 0;
-  background: transparent url("/assets/images/icons/icon-arrow-down.png") no-repeat right center;
+  background: transparent url("assets/images/icons/icon-arrow-down.png") no-repeat right center;
   color: #fff;
   font-size: 14px;
   font-weight: 900;
@@ -93,7 +93,7 @@ body {
   width: 30px;
   text-indent: -9999px;
   border-radius: 0 2px 2px 0;
-  background: #eaeaea url("/assets/images/icons/icon-search.png") no-repeat center center;
+  background: #eaeaea url("assets/images/icons/icon-search.png") no-repeat center center;
   cursor: pointer;
 }
 
@@ -126,14 +126,14 @@ body {
   display: none;
   width: 35px;
   height: 30px;
-  background: #fff url("/assets/images/icons/icon-search.png") no-repeat center center;
+  background: #fff url("assets/images/icons/icon-search.png") no-repeat center center;
   cursor: pointer;
   border: 0;
   border-radius: 2px;
 }
 
 .header__button-mobile-search.is-active {
-  background-image: url("/assets/images/icons/icon-close.png");
+  background-image: url("assets/images/icons/icon-close.png");
   background-size: 22px;
 }
 
