@@ -484,6 +484,7 @@ body {
 /* Sub Page */
 .sub-page {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .sub-page__title {
@@ -505,14 +506,28 @@ body {
 /* Trainers */
 .trainers {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
+}
+
+@media (max-width: 778px) {
+  .trainers {
+    margin-bottom: -20px;
+  }
 }
 
 .trainers__item {
   width: 25%;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media (max-width: 778px) {
+  .trainers__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 .trainers__picture {
@@ -547,6 +562,10 @@ body {
 }
 
 /* Footer */
+.footer {
+  background-color: #f4f4f4;
+}
+
 .footer .container {
   display: flex;
   align-items: center;
