@@ -169,8 +169,9 @@ body {
   }
 
   .header__search-button {
-    width: 47px;
+    width: 55px;
     height: 47px;
+    background: #139fdd url("../images/icons/icon-search-white.png") no-repeat center center;
   }
 }
 
