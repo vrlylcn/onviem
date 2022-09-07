@@ -1,4 +1,4 @@
-**Onviem**, bireyin öğrenme yöntemini temel alarak, Türkçe dilini konuşan tüm coğrafyaların bilgi teknolojileri ve iletişimi konusunda ihtiyacı olan eğitimleri sağlamak için oluşturulmuş, online video eğitim platformudur. [Detaylı bilgi](https://vrlylcn.github.io/onviem/about.html)
+**Onviem**, bireyin öğrenme yöntemini temel alarak, Türkçe dilini konuşan tüm coğrafyaların bilgi teknolojileri ve iletişimi konusunda ihtiyacı olan eğitimleri sağlamak için oluşturulmuş, online video eğitim platformudur. [Detaylı bilgi için tıklayınız.](https://vrlylcn.github.io/onviem/about.html)
 
 Projeyi canlı incelemek için [tıklayınız.](https://vrlylcn.github.io/onviem/index.html)
 
