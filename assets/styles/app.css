@@ -542,9 +542,11 @@ body {
 }
 
 .trainers__name {
-  margin: 0 0 22px 0;
+  margin: 0 0 0 0;
+  height: 50px;
   color: #434753;
   font-size: 18px;
+  line-height: 22px;
   font-weight: 700;
 }
 
@@ -600,12 +602,16 @@ body {
 
 .contact-form__input,
 .contact-form__textarea {
-  padding: 8px 16px;
   width: 100%;
   font-family: "Arial", sans-serif;
   font-size: 13px;
   border-radius: 20px;
   border: 2px solid #cfcfcf;
+  -webkit-appearance: none;
+}
+
+.contact-form__input {
+  padding: 8px 16px;
 }
 
 .contact-form__input:focus,
@@ -614,6 +620,7 @@ body {
 }
 
 .contact-form__textarea {
+  padding: 15px;
   min-height: 200px;
   margin-bottom: 30px;
   resize: none;
