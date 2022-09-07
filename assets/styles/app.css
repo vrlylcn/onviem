@@ -27,6 +27,77 @@ body {
   padding-right: 15px;
 }
 
+/* Icons */
+.icon {
+  display: inline-block;
+  background-image: url("../images/sprite.png");
+}
+
+.icon-logo {
+  width: 97px;
+  height: 24px;
+  background-position-y: -40px;
+}
+
+.icon-arrow-down {
+  width: 15px;
+  height: 7px;
+  background-position-x: -131px;
+}
+
+.icon-search {
+  width: 14px;
+  height: 14px;
+  background-position: -132px -9px;
+}
+
+.icon-close {
+  width: 14px;
+  height: 14px;
+  background-position-x: -273px;
+}
+
+.icon-notes {
+  width: 32px;
+  height: 40px;
+  background-position-x: -231px;
+}
+
+.icon-files {
+  width: 32px;
+  height: 40px;
+  background-position-x: -155px;
+}
+
+.icon-level {
+  width: 40px;
+  height: 40px;
+  background-position-x: -189px;
+}
+
+.icon-facebook {
+  width: 32px;
+  height: 32px;
+  background-position-x: -32px;
+}
+
+.icon-twitter {
+  width: 32px;
+  height: 32px;
+  background-position-x: -96px;
+}
+
+.icon-youtube {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-google-plus {
+  width: 32px;
+  height: 32px;
+  background-position-x: -64px;
+}
+
 /* Header */
 .header {
   height: 50px;
@@ -47,14 +118,19 @@ body {
 }
 
 .header__button {
-  display: inline-block;
-  padding-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   border: 0;
-  background: transparent url("../images/icons/icon-arrow-down.png") no-repeat right center;
+  background: transparent;
   color: #fff;
   font-size: 14px;
   font-weight: 900;
   cursor: pointer;
+}
+
+.header__button .icon {
+  margin-left: 8px;
 }
 
 .header__search {
@@ -87,12 +163,14 @@ body {
 }
 
 .header__search-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   height: 32px;
-  width: 30px;
-  text-indent: -9999px;
+  width: 40px;
   border-radius: 0 2px 2px 0;
-  background: #eaeaea url("../images/icons/icon-search.png") no-repeat center center;
+  background-color: #139fdd;
   cursor: pointer;
 }
 
@@ -125,15 +203,24 @@ body {
   display: none;
   width: 35px;
   height: 30px;
-  background: #fff url("../images/icons/icon-search.png") no-repeat center center;
+  line-height: 32px;
+  background: #139fdd;
   cursor: pointer;
   border: 0;
   border-radius: 2px;
+  overflow: hidden;
 }
 
-.header__button-mobile-search.is-active {
-  background-image: url("../images/icons/icon-close.png");
-  background-size: 22px;
+.header__button-mobile-search .icon:last-child {
+  display: none;
+}
+
+.header__button-mobile-search.is-active .icon:first-child {
+  display: none;
+}
+
+.header__button-mobile-search.is-active .icon:last-child {
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -560,7 +647,7 @@ body {
 }
 
 .trainers__social-link + .trainers__social-link {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /* Contact Form */

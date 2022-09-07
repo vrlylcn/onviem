@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Onviem E-Learning</title>
+  <title>Onviem E-Learning Platform</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/styles/normalize.css">
@@ -22,26 +22,37 @@
 
       <div class="header__logo">
         <a href="index.html" class="header__logo-link">
-          <img src="assets/images/onviem-logo.png" alt="Onviem" width="97" height="24" class="header__logo-image">
+          <span class="icon icon-logo"></span>
         </a>
       </div>
 
-      <button type="button" class="header__button header__button-navigation">EĞİTİMLER</button>
+      <button type="button" class="header__button header__button-navigation">
+        EĞİTİMLER
+        <span class="icon icon-arrow-down"></span>
+      </button>
 
       <div class="header__search" id="search-container">
         <form method="POST" onsubmit="return false" novalidate class="header__search-form">
           <label for="query" class="header__search-label">
             <input type="text" id="query" name="query" placeholder="Eğitim, program veya eğitmen ara" class="header__search-input">
-            <button type="submit" class="header__search-button">ARA</button>
+            <button type="submit" class="header__search-button">
+              <span class="icon icon-search"></span>
+            </button>
           </label>
         </form>
       </div>
 
       <div class="header__user">
-        <button type="button" class="header__button header__button-login">GİRİŞ YAP / KAYIT OL</button>
+        <button type="button" class="header__button header__button-login">
+          GİRİŞ YAP / KAYIT OL
+          <span class="icon icon-arrow-down"></span>
+        </button>
       </div>
 
-      <button type="button" class="header__button-mobile-search" id="button-mobile-search"></button>
+      <button type="button" class="header__button-mobile-search" id="button-mobile-search">
+        <span class="icon icon-search"></span>
+        <span class="icon icon-close"></span>
+      </button>
     </div>
   </header>
 
@@ -59,17 +70,17 @@
     <div class="container">
       <div class="properties__wrapper">
         <div class="properties__item">
-          <img src="assets/images/icons/icon-notes.png" alt="Özel Notlar" width="32" height="40" class="properties__icon">
+          <span class="icon icon-notes"></span>
           <h2 class="properties__title">ÖZEL NOTLAR</h2>
           <p class="properties__description">Unutmak istemediklerini not alabilmen için sana özel olarak hazırlanmış not defteri</p>
         </div>
         <div class="properties__item">
-          <img src="assets/images/icons/icon-files.png" alt="Örnek Dosyalar" width="32" height="40" class="properties__icon">
+          <span class="icon icon-files"></span>
           <h2 class="properties__title">ÖRNEK DOSYALAR</h2>
           <p class="properties__description">Örnekleri eğitmen ile aynı anda yapabilmen için ihtiyacın olan çalışma dosyaları</p>
         </div>
         <div class="properties__item">
-          <img src="assets/images/icons/icon-level.png" alt="Her Seviyeye Eğitim" width="40" height="40" class="properties__icon">
+          <span class="icon icon-level"></span>
           <h2 class="properties__title">HER SEVİYEYE EĞİTİM</h2>
           <p class="properties__description">Başlangıç, orta ve ileri düzey olmak üzere her seviye eğitim</p>
         </div>
@@ -216,25 +227,21 @@
           <span class="footer__separator">/</span>
           <a href="contact.html" class="footer__link">İLETİŞİM</a>
         </div>
-
         <small class="footer__copyright-text">Copyright &copy;2016 - Tüm Hakkı Saklıdır.</small>
       </div>
 
       <div class="footer__social">
         <a href="index.html" class="footer__social-link">
-          <img src="assets/images/icons/icon-facebook.jpg" alt="Facebook" width="32" height="32">
+          <span class="icon icon-facebook"></span>
         </a>
-
         <a href="index.html" class="footer__social-link">
-          <img src="assets/images/icons/icon-twitter.jpg" alt="Twitter" width="32" height="32">
+          <span class="icon icon-twitter"></span>
         </a>
-
         <a href="index.html" class="footer__social-link" width="32" height="32">
-          <img src="assets/images/icons/icon-youtube.jpg" alt="YouTube" width="32" height="32">
+          <span class="icon icon-youtube"></span>
         </a>
-
         <a href="index.html" class="footer__social-link">
-          <img src="assets/images/icons/icon-google-plus.jpg" alt="Google Plus" width="32" height="32">
+          <span class="icon icon-google-plus"></span>
         </a>
       </div>
     </div>
