@@ -1,3 +1,4 @@
+## Proje Açıklaması
 **Onviem**, bireyin öğrenme yöntemini temel alarak, Türkçe dilini konuşan tüm coğrafyaların bilgi teknolojileri ve iletişimi konusunda ihtiyacı olan eğitimleri sağlamak için oluşturulmuş, online video eğitim platformudur. [Detaylı bilgi için tıklayınız.](https://vrlylcn.github.io/onviem/about.html)
 
 Projeyi canlı incelemek için [tıklayınız.](https://vrlylcn.github.io/onviem/index.html)
@@ -7,9 +8,8 @@ Projeyi canlı incelemek için [tıklayınız.](https://vrlylcn.github.io/onviem
 - Sayfa içerisindeki DOM elemanlarını ve sayfa mizanpajını ayarlamak için CSS3 teknolojisi kullanılmıştır.
 - Kullanıcının etkileşimini sağlamak amacıyla jQuery (v3.6.1) kullanılmıştır.
 
-## Ekran Görüntüleri
+## Tasarım Önizlemesi
 ![Desktop](https://raw.githubusercontent.com/vrlylcn/onviem/main/home-page-desktop.png)
-![Mobile](https://raw.githubusercontent.com/vrlylcn/onviem/main/home-page-mobile.png)
 
 ## Yapılacaklar Listesi
 ✓ Sayfa içerisinde kullanılan tüm ikonlar sprite tekniği ile birleştirilmelidir.
