@@ -4,7 +4,7 @@ Projeyi canlı incelemek için [tıklayınız.](https://vrlylcn.github.io/onviem
 
 ## Kullanılan Teknolojiler
 - Sayfa iskeletini oluşturmak için HTML5 etiketleri kullanılmıştır.
-- Sayfa içerisindeki DOM etiketlerini ve sayfa mizanpajını ayarlamak için CSS3 teknolojisi kullanılmıştır.
+- Sayfa içerisindeki DOM elemanlarını ve sayfa mizanpajını ayarlamak için CSS3 teknolojisi kullanılmıştır.
 - Kullanıcının etkileşimini sağlamak amacıyla jQuery (v3.6.1) kullanılmıştır.
 
 ## Ekran Görüntüleri
